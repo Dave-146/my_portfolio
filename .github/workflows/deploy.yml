@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -31,12 +33,14 @@ jobs:
           NODE_ENV: production
           NEXT_PUBLIC_BASE_PATH: '/my_portfolio'
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          folder: out
-          branch: gh-pages
-          clean: true
-          clean-exclude: |
-            .git
-            .gitignore 
+          path: './out'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 
