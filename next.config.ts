@@ -11,7 +11,9 @@ const nextConfig: NextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/my_portfolio/' : '',
   trailingSlash: true,
   webpack: (config) => {
-    config.resolve.fallback = { fs: false, path: false };
+    if (config.resolve) {
+      config.resolve.fallback = { fs: false, path: false };
+    }
     if (config.module && config.module.rules) {
       config.module.rules.push({
         test: /\.(gif|mp4)$/i,

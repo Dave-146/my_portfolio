@@ -14,9 +14,9 @@ const Hero = () => {
             <p className="text-xl md:text-2xl mb-8">
               A passionate developer creating beautiful web experiences
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors">
+            <a href="#projects" className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors">
               View My Work
-            </button>
+            </a>
           </div>
           <div className="relative hidden md:block">
             <div className="w-full h-full relative">
