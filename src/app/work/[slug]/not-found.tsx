@@ -12,7 +12,7 @@ export default function NotFound() {
           Project Not Found
         </h1>
         <p className="font-montserrat text-gray-600 mb-8 text-center max-w-md">
-          Sorry, the project you're looking for doesn't exist or has been moved.
+          Sorry, the project you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <Link 
           href="/" 

@@ -41,7 +41,7 @@ const Hero = () => {
               className="space-y-6 text-center max-w-lg px-4"
             >
               <h1 className="font-comfortaa text-4xl font-bold text-gray-900">
-                Hey, I'm Dave Crean
+                Hey, I&apos;m Dave Crean
               </h1>
               <p className="font-montserrat text-lg text-gray-600 leading-relaxed">
                 With a background in civil engineering and experience at Apple, 
@@ -62,7 +62,7 @@ const Hero = () => {
               className="md:col-span-6 lg:col-span-5 space-y-6 z-10"
             >
               <h1 className="font-comfortaa text-5xl lg:text-6xl font-bold text-gray-900">
-                Hey, I'm Dave Crean
+                Hey, I&apos;m Dave Crean
               </h1>
               <p className="font-montserrat text-lg text-gray-600 leading-relaxed">
                 With a background in civil engineering and experience at Apple, 

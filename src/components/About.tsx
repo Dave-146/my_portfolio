@@ -17,7 +17,7 @@ const About = () => {
           <div className="relative aspect-square max-w-md mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/profile.png"
+                src="/profile.webp"
                 alt="Dave Crean"
                 width={500}
                 height={500}
