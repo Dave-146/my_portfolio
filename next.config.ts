@@ -1,22 +1,14 @@
-import type { Configuration } from 'webpack';
+import type { NextConfig } from 'next';
 
 /** @type {import('next').NextConfig} */
-
-const nextConfig = {
+const nextConfig: NextConfig = {
+  output: 'export',
   images: {
-    formats: ['image/avif', 'image/webp'],
-    remotePatterns: [],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    domains: [],
     unoptimized: true,
   },
   reactStrictMode: true,
-  swcMinify: true,
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-  webpack(config: Configuration) {
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, path: false };
     if (config.module && config.module.rules) {
       config.module.rules.push({
         test: /\.(gif|mp4)$/i,
@@ -31,6 +23,6 @@ const nextConfig = {
     }
     return config;
   },
-}
+};
 
 export default nextConfig;

@@ -46,7 +46,7 @@ const About = () => {
             >
               <p className="font-montserrat text-gray-600 leading-relaxed">
                 I am a dynamic UX/UI designer with a passion for crafting user-centric solutions, 
-                I honed my skills at George Brown College's Interaction Design program.
+                I honed my skills at George Brown College&apos;s Interaction Design program.
               </p>
               
               <p className="font-montserrat text-gray-600 leading-relaxed">
@@ -58,9 +58,22 @@ const About = () => {
               <p className="font-montserrat text-gray-600 leading-relaxed">
                 My design philosophy is rooted in close observation of customer interactions, 
                 enabling me to engineer designs that are technically sound and deeply connect 
-                with users' needs.
+                with users&apos; needs.
               </p>
             </motion.div>
+
+            <p className="text-lg mb-6">
+              With a background in civil engineering and experience at Apple, 
+              I transitioned into UX/UI design to create intuitive and engaging 
+              user experiences. My goal is to blend functionality with creativity, 
+              ensuring that every design decision is purposeful.
+            </p>
+
+            <p className="text-lg">
+              When I&apos;m not designing, you can find me exploring new technologies, 
+              contributing to open-source projects, or sharing my knowledge through 
+              writing and speaking engagements.
+            </p>
           </div>
         </motion.div>
       </div>

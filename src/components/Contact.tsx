@@ -12,11 +12,11 @@ const Contact = () => {
           className="max-w-2xl mx-auto text-center"
         >
           <h2 className="font-comfortaa text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           
           <p className="font-montserrat text-gray-600 mb-12">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
