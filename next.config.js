@@ -1,7 +1,5 @@
-import type { NextConfig } from 'next';
-
 /** @type {import('next').NextConfig} */
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
@@ -9,11 +7,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   basePath: process.env.NODE_ENV === 'production' ? '/my_portfolio' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/my_portfolio/' : '',
-  trailingSlash: true,
   webpack: (config) => {
-    if (config.resolve) {
-      config.resolve.fallback = { fs: false, path: false };
-    }
+    config.resolve.fallback = { fs: false, path: false };
     if (config.module && config.module.rules) {
       config.module.rules.push({
         test: /\.(gif|mp4)$/i,
@@ -30,4 +25,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
